@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20131219163238) do
 
   create_table "pieces", force: true do |t|
     t.string   "name"
+    t.float    "cost"
     t.integer  "artist_id"
     t.integer  "medium_id"
     t.integer  "sale_id"
