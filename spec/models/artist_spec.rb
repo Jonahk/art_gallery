@@ -13,4 +13,6 @@ describe Artist do
 
   it { should belong_to(:birthplace) }
 
+  it { should have_many(:pieces) }
+
 end
