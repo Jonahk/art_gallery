@@ -7,4 +7,6 @@ describe Customer do
 
   it { should have_valid(:contact).when('joseph@blow.me') }
   it { should_not have_valid(:contact).when(*blank_values) }
+
+  it { should have_many(:collections).through(:favorite_collections) }
 end
