@@ -13,4 +13,6 @@ describe Artist do
 
   it { should belong_to(:style) }
 
+   it { should have_many(:pieces) }
+
 end
