@@ -7,4 +7,6 @@ describe Birthplace do
 
   it { should have_valid(:city).when('Boston', 'New York') }
   it { should_not have_valid(:city).when(*blank_values) }
+
+  it { should have_many(:artists) }
 end
