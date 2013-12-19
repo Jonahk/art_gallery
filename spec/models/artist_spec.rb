@@ -9,4 +9,8 @@ describe Artist do
   it { should have_valid(:contact).when('the_maestro@hotmail.com') }
   it { should_not have_valid(:contact).when(*blank_values) }
 
+  it { should belong_to(:style) }
+
+  it { should belong_to(:birthplace) }
+
 end
