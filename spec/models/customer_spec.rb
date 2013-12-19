@@ -9,4 +9,5 @@ describe Customer do
   it { should_not have_valid(:contact).when(*blank_values) }
 
   it { should have_many(:collections).through(:favorite_collections) }
+  it { should have_many(:sales) }
 end
